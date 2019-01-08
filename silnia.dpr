@@ -1,6 +1,7 @@
 program silnia;
 {--== N! ==--
- Copyright (c)by Jan T. Biernat}
+ Copyright (c)by Jan T. Biernat
+ Borland Delphi 7 - Console Applications}
 
 {$APPTYPE CONSOLE}
 
@@ -15,7 +16,7 @@ begin
 
   //Pobranie danych z klawiatury.
     Writeln; Write('Podaj liczbe: '); Readln(iLiczba);
-  //Wykonanie obliczeñ.
+  //Wykonanie obliczeÅ„.
     iSilnia:= 1;
     if(iLiczba > -1) then begin
       for I:= 1 to iLiczba do begin
@@ -25,7 +26,7 @@ begin
     end;
 
 
-  {Zatrzymanie programu do czasu naciœniêcia klawisza ENTER.}
+  {Zatrzymanie programu do czasu naciÅ›niÄ™cia klawisza ENTER.}
   Writeln; Write('Nacisnij klawisz ENTER...');
-  Readln; {Zatrzymanie programu do czasu naciœniêcia klawisza ENTER.}
+  Readln; {Zatrzymanie programu do czasu naciÅ›niÄ™cia klawisza ENTER.}
 end.
