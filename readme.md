@@ -1,4 +1,4 @@
-Na profilu CODE-SIMPLE umieszczam przykładowe algorytmy w języku C++, C++Builder, Delphi, PHP, JS. 
+Na profilu PROSTE-ALGORYTMY umieszczam przykładowe algorytmy w języku C++, C++Builder, Delphi, PHP, JS. 
 Z umieszczonych algorytmów można korzystać dowoli. 
 
 Dołożyłem wszelkich starań, by algorytmy działały prawidłowo. 
