@@ -4,7 +4,6 @@ program literowanie;
                             (Kurs podstawowy)
  Copyright(c)by Jan T. Biernat
 }
-
 {$APPTYPE CONSOLE}
 
 uses SysUtils, Windows;
@@ -14,44 +13,39 @@ var Znaki :String;
 begin
   Writeln('--== Literowanie ==--');
 
-
   {Wprowadzanie danych.}
   Writeln;
   Znaki:= '';
   Write('Podaj dowolny tekst: ');
   Readln(Znaki);
-  if (Znaki<>'') then {Jeøeli zostanie podany przynajmniej jeden znak,
-                       to wykonaj poniøsze instrukcje.}
+  if (Znaki<>'') then {Je≈ºeli zostanie podany przynajmniej jeden znak,
+                       to wykonaj poni≈ºsze instrukcje.}
   begin
     Writeln;
     Write('Literowanie: ');
-    for A:= 1 to Length(Znaki) do {Wykonaj pÍtle tyle razy ile jest znakÛw
-                                   w podanym tekúcie. O iloúci powtÛrzeÒ
-                                   pÍtli decyduje funkcja "Length".
-
-                                   Length(X) - wynikiem dzia≥ania funkcji
-                                               jest wartoúÊ liczbowa
-                                               ca≥kowita okreúlajπca
-                                               z ilu znakÛw sk≥ada siÍ
+    for A:= 1 to Length(Znaki) do {Wykonaj pƒôtle tyle razy ile jest znak√≥w
+                                   w podanym tek≈õcie. O ilo≈õci powt√≥rze≈Ñ
+                                   pƒôtli decyduje funkcja "Length".
+                                   Length(X) - wynikiem dzia≈Çania funkcji
+                                               jest warto≈õƒá liczbowa
+                                               ca≈Çkowita okre≈õlajƒÖca
+                                               z ilu znak√≥w sk≈Çada siƒô
                                                podany tekst.
-                                               W miejsce parametru X naleøy
-                                               umieúciÊ zmienna tekstowa.}
+                                               W miejsce parametru X nale≈ºy
+                                               umie≈õciƒá zmienna tekstowa.}
     begin
-      Write(Znaki[A]); {Wyúwietlenie na ekranie znaku.
-
+      Write(Znaki[A]); {Wy≈õwietlenie na ekranie znaku.
                         Zapis "Znaki[A]" pozwala na pobranie jednego
-                        znaku, ktÛry leøy na pozycji o numerze
-                        przechowywanym w zmiennej liczbowej ca≥kowitej "A".
-
-                        Na przyk≥ad: "Znaki[3]" - pobierze znak, ktÛry
-                                     znajduje siÍ na trzeciej pozycji
+                        znaku, kt√≥ry le≈ºy na pozycji o numerze
+                        przechowywanym w zmiennej liczbowej ca≈Çkowitej "A".
+                        Na przyk≈Çad: "Znaki[3]" - pobierze znak, kt√≥ry
+                                     znajduje siƒô na trzeciej pozycji
                                      podanego tekstu.}
-      Sleep(222); {Wstrzymanie dzia≥ania programu na 222 milisekund.}
+      Sleep(222); {Wstrzymanie dzia≈Çania programu na 222 milisekund.}
     end;
   end;
 
-
-  {Zatrzymaj program do czasu naciúniÍcia klawisza ENTER.}
+  {Zatrzymaj program do czasu naci≈õniƒôcia klawisza ENTER.}
   Writeln;
   Writeln;
   Write('Nacisnij klawisz ENTER...');
