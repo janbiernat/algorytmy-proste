@@ -2,6 +2,7 @@ program odbicie_pilki;
 { 
  --== Odbicie pilki ==-- 
  Copyright (c)by Jan T. Biernat 
+ Borland Turbo Pascal 7.0 
 } 
 uses crt; {CRT - biblioteka zawiera funkcje i procedury do 
                  obsługi m.in. klawiatury i ekranu.} 
