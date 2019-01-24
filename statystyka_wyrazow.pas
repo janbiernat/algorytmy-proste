@@ -31,7 +31,7 @@ end;
 const T1 = 'Borland Turbo Pascal 7.0 for DOS! f';
 begin
   Writeln('--== Statystyka wyrazow ==--');
-  Writeln('Copyright(c)by Jan T. Biernat');
+  Writeln('Copyright (c)by Jan T. Biernat');
   Writeln;
   {Statystyka wyrazow - raport.}
   Writeln('Tekst "', T1, '" posiada: ');
