@@ -35,7 +35,7 @@ begin
   Writeln;
   {Statystyka wyrazow - raport.}
   Writeln('Tekst "', T1, '" posiada: ');
-  Writeln('a) wyrazow jest      : ', iWyrazowJest(T1));
+  Writeln('a) wyrazow           : ', iWyrazowJest(T1));
   Writeln('b) znakow bez spacji : ', iZnakiBezSpacji(T1));
   Writeln('c) znakow ze spacjami: ', Length(T1));
   {Czekaj, az zostanie nacisniety klawisz ENTER. }
