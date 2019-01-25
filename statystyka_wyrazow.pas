@@ -28,7 +28,7 @@ begin
   iWyrazowJest:= L;
 end;
 {Blok startowy/glowny.}
-const T1 = 'Borland Turbo Pascal 7.0 for DOS! f';
+const T1 = 'Borland Turbo Pascal 7.0 for DOS.';
 begin
   Writeln('--== Statystyka wyrazow ==--');
   Writeln('Copyright (c)by Jan T. Biernat');
