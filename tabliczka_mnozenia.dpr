@@ -1,60 +1,60 @@
 program tabliczka_mnozenia; 
 { 
- --== Tabliczka mno¿enia ==-- 
+ --== Tabliczka mnoÅ¼enia ==-- 
  Copyright (c)by Jan T. Biernat 
 } 
 {$APPTYPE CONSOLE} 
-uses{Dyrektywa "SysUtils" umo¿liwia wykorzystanie bibliotek 
-     w³asnych lub napisanych przez osoby trzecie.} 
+uses {Dyrektywa "SysUtils" umoÅ¼liwia wykorzystanie bibliotek 
+      wÅ‚asnych lub napisanych przez osoby trzecie.} 
   SysUtils; {Wykorzystanie biblioteki "SysUtils" dostarczonej 
-             przez firmê Borland.} 
-var A, B, Odp :shortint; {Deklaracja zmiennych liczbowych ca³kowitych.} 
+             przez firmÄ™ Borland.} 
+var A, B, Odp :shortint; {Deklaracja zmiennych liczbowych caÅ‚kowitych.} 
 begin 
-  Writeln('--== Tabliczka mnozenia ==--'); {Wyœwietlenie na ekranie 
-                                            tekstu znajduj¹cego siê 
-                                            pomiêdzy apostrofami.} 
+  Writeln('--== Tabliczka mnozenia ==--'); {WyÅ›wietlenie na ekranie 
+                                            tekstu znajdujÄ…cego siÄ™ 
+                                            pomiÄ™dzy apostrofami.} 
   Writeln('Copyright (c)by Jan T. Biernat'); 
  
-  {Losowanie pytañ.} 
+  {Losowanie pytaÅ„.} 
   Randomize; {Zainicjowanie generatora liczb pseudolosowych.} 
  
-  A:= 0; {Wyzerowanie zmiennej liczbowej ca³kowitej.} 
-  A:= Random(11); {Wylosowanie jednej liczby z przedzia³u liczb od 
+  A:= 0; {Wyzerowanie zmiennej liczbowej caÅ‚kowitej.} 
+  A:= Random(11); {Wylosowanie jednej liczby z przedziaÅ‚u liczb od 
                    0 do 10 i przypisanie wylosowanej liczby do 
-                   zmiennej liczbowej ca³kowitej "A". 
-                   Random(X) - s³u¿y do wylosowania jednej liczby 
-                               z podanego przedzia³u liczb. 
-                               W miejsce parametru X nale¿y umieœciæ 
-                               liczbê ca³kowit¹ np. 11. 
+                   zmiennej liczbowej caÅ‚kowitej "A". 
+                   Random(X) - sÅ‚uÅ¼y do wylosowania jednej liczby 
+                               z podanego przedziaÅ‚u liczb. 
+                               W miejsce parametru X naleÅ¼y umieÅ›ciÄ‡ 
+                               liczbÄ™ caÅ‚kowitÄ… np. 11. 
                                Wylosowana liczba jest zawsze mniejsza 
                                od podanej liczby w parametrze X.} 
  
   B:= 0; B:= Random(11); 
  
-  {Wyœwietlenie pytania na ekranie oraz sprawdzenie udzielonej odpowiedzi.} 
-  Writeln; {Pozostawienie jednego wiersza pustego i przesuniêcie 
-            kursora tekstowego do nastêpnego wiersza.} 
-  Write(A, ' x ', B, ' = '); {Wyœwietlenie na ekranie zawartoœci zmiennych 
-                              liczbowych "A" i 'B" oraz tekstu znajduj¹cego 
-                              siê pomiêdzy apostrofami. 
-                              UWAGA: Parametry oddzielane s¹ przecinkami. 
-                              Parametr 2 i 4 wyœwietla na ekranie tekst 
-                              znajduj¹cy siê pomiêdzy apostrofami. 
-                              Natomiast parametr 1 i 3 wyœwietla na ekranie 
-                              zawartoœæ zmiennych liczbowych ca³kowitych 
+  {WyÅ›wietlenie pytania na ekranie oraz sprawdzenie udzielonej odpowiedzi.} 
+  Writeln; {Pozostawienie jednego wiersza pustego i przesuniÄ™cie 
+            kursora tekstowego do nastÄ™pnego wiersza.} 
+  Write(A, ' x ', B, ' = '); {WyÅ›wietlenie na ekranie zawartoÅ›ci zmiennych 
+                              liczbowych "A" i 'B" oraz tekstu znajdujÄ…cego 
+                              siÄ™ pomiÄ™dzy apostrofami. 
+                              UWAGA: Parametry oddzielane sÄ… przecinkami. 
+                              Parametr 2 i 4 wyÅ›wietla na ekranie tekst 
+                              znajdujÄ…cy siÄ™ pomiÄ™dzy apostrofami. 
+                              Natomiast parametr 1 i 3 wyÅ›wietla na ekranie 
+                              zawartoÅ›Ä‡ zmiennych liczbowych caÅ‚kowitych 
                               "A" - parametr 1 i "B" - parametr 2.} 
   Odp:= 0; 
   Readln(Odp); {Pobranie liczb z klawiatury i przypisanie pobranych 
-                 danych do zmiennej liczbowej ca³kowitej "Odp".} 
+                 danych do zmiennej liczbowej caÅ‚kowitej "Odp".} 
   if(A*B = Odp) then Writeln('Dobrze!') 
   else Writeln('Zle!'); 
-  {Je¿eli odpowiedŸ jest poprawna (tj. A*B = Odp -  zawartoœæ zmiennej 
-   liczbowej ca³kowitej "A" mno¿ona przez zawartoœæ zmiennej liczbowej 
-   ca³kowitej "B" jest równa zawartoœci zmiennej liczbowej ca³kowitej "Odp"), 
-   to wykonaj instrukcje po s³owie THEN. W innym przypadku wykonaj instrukcje 
-   po s³owie ELSE.} 
+  {JeÅ¼eli odpowiedÅº jest poprawna (tj. A*B = Odp -  zawartoÅ›Ä‡ zmiennej 
+   liczbowej caÅ‚kowitej "A" mnoÅ¼ona przez zawartoÅ›Ä‡ zmiennej liczbowej 
+   caÅ‚kowitej "B" jest rÃ³wna zawartoÅ›ci zmiennej liczbowej caÅ‚kowitej "Odp"), 
+   to wykonaj instrukcje po sÅ‚owie THEN. W innym przypadku wykonaj instrukcje 
+   po sÅ‚owie ELSE.} 
  
-  {Zatrzymanie programu do czasu naciœniêcia klawisza ENTER.} 
+  {Zatrzymanie programu do czasu naciÅ›niÄ™cia klawisza ENTER.} 
   Writeln; Write('Nacisnij klawisz ENTER...'); 
-  Readln; {Zatrzymanie programu do czasu naciœniêcia klawisza ENTER.} 
+  Readln; {Zatrzymanie programu do czasu naciÅ›niÄ™cia klawisza ENTER.} 
 end. 
