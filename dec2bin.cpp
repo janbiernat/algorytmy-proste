@@ -1,4 +1,4 @@
-#include<iostream> //1 
+#include <iostream> //1 
 #include <conio.h> //2 
 using namespace std; //3 
 int main() { 
@@ -8,10 +8,10 @@ int main() {
   //Deklaracja zmiennych. 
     long int Liczba = 0, Wynik = 0, Licznik = 0; //5 
     short int Tablica[99]; //6 
-  //Pobranie liczby od u¿ytkownika. 
+  //Pobranie liczby od uÅ¼ytkownika. 
     cout << "Podaj liczbe dziesietna: "; 
     cin >> Liczba; //7 
-  //Przeliczenie liczby 10 na liczbê 2. 
+  //Przeliczenie liczby 10 na liczbÄ™ 2. 
     cout << "\n" << Liczba << " = "; //8 
     if(Liczba > 0) { //9 
         do{ 
@@ -22,51 +22,51 @@ int main() {
           Liczba = 0; Liczba = Wynik;                   //14 
           Licznik++;                                    //15 
         } while(Wynik != 0);                            //16 
-        //Wyœwietl wynik pobieraj¹c liczby z tablicy od ty³u. 
+        //WyÅ›wietl wynik pobierajÄ…c liczby z tablicy od tyÅ‚u. 
           for(int I = Licznik-1; I >-1; I--) { 
             cout << Tablica[I]; //17 
           } 
     } 
-  //Czekaj, a¿ u¿ytkownik naciœnie klawisz ENTER. 
+  //Czekaj, aÅ¼ uÅ¼ytkownik naciÅ›nie klawisz ENTER. 
     cout << "\n\nNacisnij klawisz ENTER..."; 
     getch(); //18 
 /* 
   Legenda: 
-    1) Obs³uga strumieni (np. przesy³anie danych na ekran). 
-    2) Obs³uga m.in. klawiatury. 
-    3) Podczas pracy nad du¿ymi projektami, w których u¿ywa 
-       siê wielu bibliotek z licznymi deklaracjami, mo¿emy 
-       w koñcu natkn¹æ siê na problem konfliktu nazw - gdy kilka obiektów, 
-       typów czy funkcji ma tê sam¹ nazwê. Rozwi¹zaniem mo¿e byæ 
-       np. zamkniêcie nazw w "zakresach", w celu oddzielenia ich. 
-       Z pomoc¹ przychodzi nam mechanizm przestrzeni nazw. 
-       Przestrzeñ nazw jest zatem zbiorem obiektów, która ogranicza 
-       dostêp do nich - oprócz nazwy obiektu niezbêdne jest te¿ wspomnienie, 
-       z której przestrzeni nazw chcemy go u¿yæ, obchodz¹c tym samym problem konfliktu nazw. 
-    4) Wyœwietlenie na ekranie tekstu znajduj¹cego siê pomiêdzy cudzys³owami. 
-       Zapis "\n" powoduje przejœcie do nastêpnej linii. 
-    5) zadeklarowanie zmiennych liczbowy z równoczesnym przypisaniem wartoœci pocz¹tkowej zero. 
-    6) Zadeklarowanie zmiennej tablicowej 99 elementowej tego samego typu, czyli liczbowego krótkiego. 
+    1) ObsÅ‚uga strumieni (np. przesyÅ‚anie danych na ekran). 
+    2) ObsÅ‚uga m.in. klawiatury. 
+    3) Podczas pracy nad duÅ¼ymi projektami, w ktÃ³rych uÅ¼ywa 
+       siÄ™ wielu bibliotek z licznymi deklaracjami, moÅ¼emy 
+       w koÅ„cu natknÄ…Ä‡ siÄ™ na problem konfliktu nazw - gdy kilka obiektÃ³w, 
+       typÃ³w czy funkcji ma tÄ™ samÄ… nazwÄ™. RozwiÄ…zaniem moÅ¼e byÄ‡ 
+       np. zamkniÄ™cie nazw w "zakresach", w celu oddzielenia ich. 
+       Z pomocÄ… przychodzi nam mechanizm przestrzeni nazw. 
+       PrzestrzeÅ„ nazw jest zatem zbiorem obiektÃ³w, ktÃ³ra ogranicza 
+       dostÄ™p do nich - oprÃ³cz nazwy obiektu niezbÄ™dne jest teÅ¼ wspomnienie, 
+       z ktÃ³rej przestrzeni nazw chcemy go uÅ¼yÄ‡, obchodzÄ…c tym samym problem konfliktu nazw. 
+    4) WyÅ›wietlenie na ekranie tekstu znajdujÄ…cego siÄ™ pomiÄ™dzy cudzysÅ‚owami. 
+       Zapis "\n" powoduje przejÅ›cie do nastÄ™pnej linii. 
+    5) zadeklarowanie zmiennych liczbowy z rÃ³wnoczesnym przypisaniem wartoÅ›ci poczÄ…tkowej zero. 
+    6) Zadeklarowanie zmiennej tablicowej 99 elementowej tego samego typu, czyli liczbowego krÃ³tkiego. 
     7) Pobranie danych z klawiatury i przypisanie ich do zmiennej liczbowej "Liczba". 
-    8) Wyœwietlenie na ekranie zawartoœci zmiennej liczbowej "Liczba" oraz tekstu znajduj¹cego siê pomiêdzy cudzys³owami. 
-    9) Sprawdzenie, czy podana wartoœæ (przechowywana w zmiennej liczbowej "Liczba") jest wiêksza od wartoœci 0. 
-       Je¿eli tak, to wykonuj poni¿sze instrukcje. 
+    8) WyÅ›wietlenie na ekranie zawartoÅ›ci zmiennej liczbowej "Liczba" oraz tekstu znajdujÄ…cego siÄ™ pomiÄ™dzy cudzysÅ‚owami. 
+    9) Sprawdzenie, czy podana wartoÅ›Ä‡ (przechowywana w zmiennej liczbowej "Liczba") jest wiÄ™ksza od wartoÅ›ci 0. 
+       JeÅ¼eli tak, to wykonuj poniÅ¼sze instrukcje. 
    10) Wyzerowanie zmiennej liczbowej 'Wynik". 
    11) Przypisanie do zmiennej liczbowej "Wynik" wyniku z dzielenia liczby 
-       (przechowywanej w zmiennej liczbowej "Liczba") przez liczbê 2. 
-   12) Przypisanie wartoœci zerowej do tablicy na pozycji o podanym nr indeksu 
+       (przechowywanej w zmiennej liczbowej "Liczba") przez liczbÄ™ 2. 
+   12) Przypisanie wartoÅ›ci zerowej do tablicy na pozycji o podanym nr indeksu 
        (nr indeksu jest przechowywany w zmiennej liczbowej "Licznik"). 
-   13) Sprawdzenie, czy po przecinku wartoœæ jest ro¿na od zera. Je¿eli tak to przypisz do tablicy na pozycji 
-       o nr indeksu wartoœæ 1 (nr indeksu jest przechowywany przez zmienn¹ liczbow¹ "Licznik"). 
-   14) Wyzerowanie zmiennej liczbowej "Liczba" oraz przypisanie do zmiennej "Liczba" wartoœci przechowywanej 
+   13) Sprawdzenie, czy po przecinku wartoÅ›Ä‡ jest roÅ¼na od zera. JeÅ¼eli tak to przypisz do tablicy na pozycji 
+       o nr indeksu wartoÅ›Ä‡ 1 (nr indeksu jest przechowywany przez zmiennÄ… liczbowÄ… "Licznik"). 
+   14) Wyzerowanie zmiennej liczbowej "Liczba" oraz przypisanie do zmiennej "Liczba" wartoÅ›ci przechowywanej 
        w zmiennej liczbowej "Wynik". 
-   15) Inkrementacja, czyli zwiêkszenie zawartoœci zmiennej "Licznik" o wartoœæ 1. 
+   15) Inkrementacja, czyli zwiÄ™kszenie zawartoÅ›ci zmiennej "Licznik" o wartoÅ›Ä‡ 1. 
        Zapis "Licznik++" = "Licznik = Licznik+1". 
-   16) WyjdŸ z pêtli DO ... WHILE, gdy zawartoœæ zmiennej liczbowej "Wynik" bêdzie równa wartoœci zero. 
-   17) Wyœwietlenie na ekranie liczby pobranej z tablicy. 
-       Pobranie liczb z tablicy odbywa siê w kolejnoœci od prawej do lewej. 
-       Pobieranie liczby z tablicy odbywa siê za pomoc¹ nr indeksu. 
+   16) WyjdÅº z pÄ™tli DO ... WHILE, gdy zawartoÅ›Ä‡ zmiennej liczbowej "Wynik" bÄ™dzie rÃ³wna wartoÅ›ci zero. 
+   17) WyÅ›wietlenie na ekranie liczby pobranej z tablicy. 
+       Pobranie liczb z tablicy odbywa siÄ™ w kolejnoÅ›ci od prawej do lewej. 
+       Pobieranie liczby z tablicy odbywa siÄ™ za pomocÄ… nr indeksu. 
        Nr indeksu jest przechowywany w zmiennej liczbowej "I". 
-   18) Oczekiwanie na naciœniêcie dowolnego klawisza na klawiaturze. 
+   18) Oczekiwanie na naciÅ›niÄ™cie dowolnego klawisza na klawiaturze. 
 */ 
 } 
