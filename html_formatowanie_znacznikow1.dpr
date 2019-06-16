@@ -35,9 +35,9 @@ end; {tHtmlFormatowanieZnacznikow}
 {Blok startowy/główny.} 
 const T = '<html><head><meta charset="utF-8">To jest kodowanie polskich liter.' 
          +'<meta name="KEYWORDS" content="FOR,' 
-         +' Pêtla, Lista, ComboBox, Select">' 
+         +' Pętla, Lista, ComboBox, Select">' 
          +'To jest PRACA, tak JEST. Dobre!' 
-         +'<input type="submit" value="przeœlij" name="button1">' 
+         +'<input type="submit" value="prześlij" name="button1">' 
          +'<INPUT TYPE="RESET" VALUE="RESETUJ" NAME="BUTTONRESET">' 
          +'Chyba wszystko jest OK!' 
          +'<?php eCHo "> ".$I; ?>php-PHP-pHp-PhP</body>'; 
