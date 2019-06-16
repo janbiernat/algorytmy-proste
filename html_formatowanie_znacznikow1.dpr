@@ -1,6 +1,6 @@
 program html_formatowanie_znacznikow1; 
 { 
- --== HTML Formatowanie znacznikÛw 1 - ∆wiczenie==-- 
+ --== HTML Formatowanie znacznik√≥w 1 - ƒÜwiczenie ==-- 
  Copyright (c)by Jan T. Biernat 
  Borland Turbo Delphi 2006 - Console Application 
 } 
@@ -16,7 +16,7 @@ begin
   Str:= Trim(Str); 
   if(Str<>'') then begin 
     for I:= 1 to Length(Str) do begin 
-      {WybÛr formatowania.} 
+      {Wyb√≥r formatowania.} 
       if(Str[I] = '>') or (Str[I] = '?') then L:= 0 
       else if(Str[I] = '<') then L:= 1 
            else if((Str[I] = '"') and (L = 1)) then begin 
@@ -24,7 +24,7 @@ begin
                 end else if((Str[I] = '"') and (L = 2)) then begin 
                            L:= 0; L:= 1; 
                          end; 
-      {Formatowanie znaczkÛw.} 
+      {Formatowanie znaczk√≥w.} 
       if(L = 1) then Tekst:= Tekst+AnsiUpperCase(Str[I]) 
       else if(L = 2) then Tekst:= Tekst+AnsiLowerCase(Str[I]) 
            else Tekst:= Tekst+Str[I]; 
@@ -32,12 +32,12 @@ begin
     Result:= Tekst; 
   end else Result:= ''; 
 end; {tHtmlFormatowanieZnacznikow} 
-{Blok startowy/g≥Ûwny.} 
+{Blok startowy/g≈Ç√≥wny.} 
 const T = '<html><head><meta charset="utF-8">To jest kodowanie polskich liter.' 
          +'<meta name="KEYWORDS" content="FOR,' 
-         +' PÍtla, Lista, ComboBox, Select">' 
+         +' P√™tla, Lista, ComboBox, Select">' 
          +'To jest PRACA, tak JEST. Dobre!' 
-         +'<input type="submit" value="przeúlij" name="button1">' 
+         +'<input type="submit" value="prze≈ìlij" name="button1">' 
          +'<INPUT TYPE="RESET" VALUE="RESETUJ" NAME="BUTTONRESET">' 
          +'Chyba wszystko jest OK!' 
          +'<?php eCHo "> ".$I; ?>php-PHP-pHp-PhP</body>'; 
@@ -45,14 +45,14 @@ begin
   Writeln('--== HTML Formatowanie znacznikow 1 - Cwiczenie ==--'); 
   Writeln('Copyright (c)by Jan T. Biernat'); 
   Writeln; 
-  {HTML Formatowanie znacznikÛw.} 
+  {HTML Formatowanie znacznik√≥w.} 
   Writeln; 
   Writeln('Tekst zrodlowy:'); 
   Writeln(T); 
   Writeln; Writeln; 
   Writeln('Tekst po zmianie:'); 
   Writeln('[', tHtmlFormatowanieZnacznikow(T), ']'); 
-  {Czekaj, aø uøytkownik naciúnie klawisz ENTER.} 
+  {Czekaj, a≈º u≈ºytkownik naci≈õnie klawisz ENTER.} 
   Writeln; Writeln; Writeln; 
   Write('Nacisnij klawisz ENTER...'); Readln; 
 end. 
