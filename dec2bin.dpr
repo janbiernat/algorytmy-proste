@@ -9,11 +9,11 @@ begin
   Writeln('Systemy liczbowe: Dziesietny -> Dwojkowy'); 
   Writeln; //5 
   Writeln; 
-  {Pobranie liczby od u¿ytkownika.} 
+  {Pobranie liczby od uÅ¼ytkownika.} 
     Write('Podaj liczbe dziesietna: '); 
-    Liczba:= 0; {Przypisanie do zmiennej liczbowej "Liczba" wartoœæ zerowej.} 
+    Liczba:= 0; {Przypisanie do zmiennej liczbowej "Liczba" wartoÅ›ci zerowej.} 
     Readln(Liczba); //6 
-  {Przeliczenie liczby 10 na liczbê 2.} 
+  {Przeliczenie liczby 10 na liczbÄ™ 2.} 
     Write(Liczba, ' = '); //7 
     if(Liczba > 0) then begin //8 
       Wynik:= ''; //9 
@@ -24,33 +24,33 @@ begin
       until(Liczba = 0); //13 
       Write(Wynik); //14 
     end; 
-  {Poczekaj, a¿ u¿ytkownik naciœnie klawisz ENTER.} 
+  {Poczekaj, aÅ¼ uÅ¼ytkownik naciÅ›nie klawisz ENTER.} 
     Writeln; Writeln; 
     Write('Nacisnij klawisz ENTER...'); 
     Readln; //15 
 { 
   Legenda: 
-    1) Modu³ zawiera procedury i funkcje do obs³ugi m.in. ekranu i klawiatury. 
-    2) Zadeklarowanie zmiennej liczbowej d³ugiej "Liczba". 
+    1) ModuÅ‚ zawiera procedury i funkcje do obsÅ‚ugi m.in. ekranu i klawiatury. 
+    2) Zadeklarowanie zmiennej liczbowej dÅ‚ugiej "Liczba". 
     3) Zadeklarowanie zmiennej tekstowej "Wynik". 
-    4) Wyœwietlenie na ekranie tekstu znajduj¹cego siê pomiêdzy apostrofami. 
-    5) Przesuniêcie kursora do kolejnej linii (kolejnego wiersza). 
+    4) WyÅ›wietlenie na ekranie tekstu znajdujÄ…cego siÄ™ pomiÄ™dzy apostrofami. 
+    5) PrzesuniÄ™cie kursora do kolejnej linii (kolejnego wiersza). 
     6) Pobranie danych z klawiatury i przypisanie ich do zmiennej liczbowej "Liczba". 
-    7) Wyœwietlenie na ekranie zawartoœci zmiennej liczbowej "Liczba" 
-       oraz tekstu znajduj¹cego siê pomiêdzy apostrofami. 
-    8) Sprawdzenie czy podana liczba przez u¿ytkownika jest wiêksza od wartoœci 0. 
-       Je¿eli tak, to wykonaj poni¿szy kod. 
-    9) Wyczyœæ zawartoœæ zmiennej tekstowej "Wynik". 
-   10) Sprawdzenie, czy po przecinku jest jakaœ wartoœæ. 
-       Je¿eli t¹ wartoœci¹ jest zero, to wykonaj instrukcje po s³owie THEN (tj. kod przed instrukcj¹ ELSE). 
-       W innym przypadku wykonaj instrukcje po s³owie ELSE. 
-   11) Instrukcje po s³owie ELSE wykonywane s¹, gdy warunek (IF) w linii 21 jest nieprawdziwy. 
+    7) WyÅ›wietlenie na ekranie zawartoÅ›ci zmiennej liczbowej "Liczba" 
+       oraz tekstu znajdujÄ…cego siÄ™ pomiÄ™dzy apostrofami. 
+    8) Sprawdzenie czy podana liczba przez uÅ¼ytkownika jest wiÄ™ksza od wartoÅ›ci 0. 
+       JeÅ¼eli tak, to wykonaj poniÅ¼szy kod. 
+    9) WyczyÅ›Ä‡ zawartoÅ›Ä‡ zmiennej tekstowej "Wynik". 
+   10) Sprawdzenie, czy po przecinku jest jakaÅ› wartoÅ›Ä‡. 
+       JeÅ¼eli tÄ… wartoÅ›ciÄ… jest zero, to wykonaj instrukcje po sÅ‚owie THEN (tj. kod przed instrukcjÄ… ELSE). 
+       W innym przypadku wykonaj instrukcje po sÅ‚owie ELSE. 
+   11) Instrukcje po sÅ‚owie ELSE wykonywane sÄ…, gdy warunek (IF) w linii 21 jest nieprawdziwy. 
    12) Przepisanie wyniku z dzielenie bez reszty do zmiennej liczbowej "Liczba". 
-       Przed przepisanie wyniku z dzielenia nastêpuje wykonanie dzia³ania, które polega 
-       na podzieleniu bez reszty liczby przechowywanej w zmiennej liczbowej "Liczba" przez wartoœæ 2. 
-   13) Sprawdzenie, czy zmienna liczbowa "Liczba" przechowuje wartoœæ 0. 
-       Je¿eli tak, to spe³niony jest warunek i nale¿y opuœciæ pêtlê REPEAT ... UNTIL. 
-   14) Wyœwietl uzyskany wynik w systemie liczbowym dwójkowym (tj. binarnym). 
-   15) Czekaj, a¿ u¿ytkownik naciœnie klawisz ENTER. 
+       Przed przepisanie wyniku z dzielenia nastÄ™puje wykonanie dziaÅ‚ania, ktÃ³re polega 
+       na podzieleniu bez reszty liczby przechowywanej w zmiennej liczbowej "Liczba" przez wartoÅ›Ä‡ 2. 
+   13) Sprawdzenie, czy zmienna liczbowa "Liczba" przechowuje wartoÅ›Ä‡ 0. 
+       JeÅ¼eli tak, to speÅ‚niony jest warunek i naleÅ¼y opuÅ›ciÄ‡ pÄ™tlÄ™ REPEAT ... UNTIL. 
+   14) WyÅ›wietl uzyskany wynik w systemie liczbowym dwÃ³jkowym (tj. binarnym). 
+   15) Czekaj, aÅ¼ uÅ¼ytkownik naciÅ›nie klawisz ENTER. 
 } 
 end. 
