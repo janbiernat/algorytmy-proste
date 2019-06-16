@@ -1,9 +1,9 @@
 program bin2dec; 
 {$APPTYPE CONSOLE} 
-uses SysUtils; //Modu≥ zawiera procedury i funkcje do obs≥ugi m.in. ekranu i klawiatury. 
+uses SysUtils; //Modu≈Ç zawiera procedury i funkcje do obs≈Çugi m.in. ekranu i klawiatury. 
 function Dec2Bin(Liczba :Longint):String; //Zainicjowanie funkcji "Dec2Bin". 
 var Wynik :String; 
-begin //Dec2Bin - Przelicza liczbÍ 10 na liczbÍ 2. 
+begin //Dec2Bin - Przelicza liczbƒô 10 na liczbƒô 2. 
   Wynik:= ''; 
   if(Liczba > 0) then begin 
     repeat 
@@ -14,7 +14,7 @@ begin //Dec2Bin - Przelicza liczbÍ 10 na liczbÍ 2.
     Dec2Bin:= Wynik; 
   end else Dec2Bin:= ''; 
 end; {Dec2Bin.} 
-{Blok g≥Ûwny/startowy.} 
+{Blok g≈Ç√≥wny/startowy.} 
 var LiczbaBin, Wynik :String; 
     I                :Longint; 
 begin 
@@ -22,11 +22,11 @@ begin
   Writeln('Copyright (c)by Jan T. Biernat'); 
   Writeln('Systemy liczbowe: Dwojkowy -> Dziesietny'); 
   Writeln; Writeln; 
-  {Pobranie liczby od uøytkownika.} 
+  {Pobranie liczby od u≈ºytkownika.} 
     Write('Podaj liczbe dwojkowa: '); 
     LiczbaBin:= ''; 
     Readln(LiczbaBin); 
-  {Przeliczenie liczby 10 na liczbÍ 2.} 
+  {Przeliczenie liczby 10 na liczbƒô 2.} 
     Write(LiczbaBin, ' = '); 
     for I:= 0 to 2147483647 do begin 
       Wynik:= ''; Wynik:= Dec2Bin(I); 
@@ -34,7 +34,7 @@ begin
         Write(I); break; 
       end; 
     end; 
-  {Poczekaj, aø uøytkownik naciúnie klawisz ENTER.} 
+  {Poczekaj, a≈º u≈ºytkownik naci≈õnie klawisz ENTER.} 
     Writeln; Writeln; 
     Write('Nacisnij klawisz ENTER...'); 
     Readln; 
