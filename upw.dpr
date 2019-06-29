@@ -1,6 +1,6 @@
 program upw; 
 { 
- --== Usuwanie powtarzaj¹cych siê wierszy ==-- 
+ --== Usuwanie powtarzajÄ…cych siÄ™ wierszy (UPW) ==-- 
  Copyright (c)by Jan T. Biernat 
 } 
 {$APPTYPE CONSOLE} 
@@ -14,36 +14,36 @@ begin
   Writeln('--== Usuwanie powtarzajacych sie wierszy ==--'); 
   Writeln(StringOfChar(#32, 18), 'dla plikow tekstowych!'); 
   Writeln('Copyright (c)by Jan T. Biernat'); 
-  Writeln; 
-  //Sprawdzenie parametrów. 
+  Writeln; Writeln; 
+  //Sprawdzenie parametrÃ³w. 
     tParamStr1:= ''; 
     tParamStr1:= AnsiLowerCase(Trim(ParamStr(1))); 
     tParamStr2:= ''; tParamStr2:= AnsiLowerCase(Trim(ParamStr(2))); 
-  //Sprawdzenie parametrów podanych przy wywo³aniu programu. 
+  //Sprawdzenie parametrÃ³w podanych przy wywoÅ‚aniu programu. 
     if(tParamStr1 = '/p') then begin 
-      //Zapisz na dysk przyk³adowy plik tekstowy. 
+      //Zapisz na dysk przykÅ‚adowy plik tekstowy. 
         PlikZ:= TStringList.Create; 
           PlikZ.Clear; 
           for Z:= 0 to 3 do begin 
-            PlikZ.Add('Poniedzia³ek'); 
+            PlikZ.Add('PoniedziaÅ‚ek'); 
             PlikZ.Add('Wtorek'); 
-            PlikZ.Add('Œroda'); 
+            PlikZ.Add('Åšroda'); 
             PlikZ.Add('Czwartek'); 
-            PlikZ.Add('Pi¹tek'); 
+            PlikZ.Add('PiÄ…tek'); 
             PlikZ.Add('Sobota'); 
             PlikZ.Add('Niedziela'); 
-            PlikZ.Add('Styczeñ'); 
+            PlikZ.Add('StyczeÅ„'); 
             PlikZ.Add('Luty'); 
             PlikZ.Add('Marzec'); 
-            PlikZ.Add('Kwiecieñ'); 
+            PlikZ.Add('KwiecieÅ„'); 
             PlikZ.Add('Maj'); 
             PlikZ.Add('Czerwiec'); 
             PlikZ.Add('Lipiec'); 
-            PlikZ.Add('Sierpieñ'); 
-            PlikZ.Add('Wrzesieñ'); 
-            PlikZ.Add('PaŸdziernik'); 
+            PlikZ.Add('SierpieÅ„'); 
+            PlikZ.Add('WrzesieÅ„'); 
+            PlikZ.Add('PaÅºdziernik'); 
             PlikZ.Add('Listopad'); 
-            PlikZ.Add('Grudzieñ'); 
+            PlikZ.Add('GrudzieÅ„'); 
             PlikZ.Add('Jan'); 
             PlikZ.Add('Anna'); 
             PlikZ.Add('Marcin'); 
@@ -52,7 +52,7 @@ begin
             PlikZ.Add('Marta'); 
             PlikZ.Add('Teresa'); 
             PlikZ.Add('Ela'); 
-            PlikZ.Add('Gra¿yna'); 
+            PlikZ.Add('GraÅ¼yna'); 
           end; 
           FileSetAttr(tNazwaPliku, faArchive); 
           DeleteFile(tNazwaPliku); 
@@ -60,8 +60,8 @@ begin
           PlikZ.Destroy; 
     end else 
     if(tParamStr1<>'') then begin 
-      (*Usuñ powtarzaj¹ce siê wiersze 
-        i/lub posortuj alfabetycznie pozosta³e.*) 
+      (*UsuÅ„ powtarzajÄ…ce siÄ™ wiersze 
+        i/lub posortuj alfabetycznie pozostaÅ‚e.*) 
       if(FileExists(tParamStr1) = TRUE) then begin 
         PlikZ:= TStringList.Create; 
           PlikZ.Clear; 
@@ -86,7 +86,7 @@ begin
                   Break; 
                 end; 
               end; 
-              //Dodaj wiersz do drugiej listy wewnêtrznej. 
+              //Dodaj wiersz do drugiej listy wewnÄ™trznej. 
                 if(logK = FALSE) then begin 
                   PlikK.Add(T); 
                   Write('.'); 
@@ -106,11 +106,11 @@ begin
       end else begin 
                  //Informacja o braku pliku na dysku. 
                    Writeln; 
-                   Writeln('BLAD -?Brak na dysku pliku o podanej nazwie!');  
+                   Writeln('BLAD -?Brak na dysku pliku o podanej nazwie!'); 
                end; 
     end else 
     begin 
-      //Komunikat o braku parametrów oraz wyœwietlenie pomocy. 
+      //Komunikat o braku parametrÃ³w oraz wyÅ›wietlenie pomocy. 
         Writeln; 
         Writeln('BLAD -?Brak podanych parametrow!'); 
         Writeln(''); 
@@ -127,7 +127,7 @@ begin
         Writeln(StringOfChar(#32, 24)+'nazwe pliku, np. "dane.txt".'); 
         Writeln(StringOfChar(#32, 24)+'Po zlikwidowaniu powtarzajacych sie wierszy,'); 
         Writeln(StringOfChar(#32, 24)+'pozostale zostana posortowane alfabetycznie.'); 
-      //Zatrzymaj program do czasu naciœniêcia klawisza ENTER. 
+      //Zatrzymaj program do czasu naciÅ›niÄ™cia klawisza ENTER. 
         Writeln; Writeln; 
         Write('Nacisnij klawisz ENTER...'); Readln; 
     end; 
