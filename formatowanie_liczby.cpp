@@ -4,7 +4,7 @@
   Copyright (c)by Jan T. Biernat*/ 
 using namespace std; 
 string tFL12_345(string Liczba="") { 
-  //tFL12_345 - Formatuje liczbê, tj. 12345 = 12 345. 
+  //tFL12_345 - Formatuje liczbÄ™, tj. 12345 = 12 345. 
     short int Licznik = 0; 
     string Znaki = ""; 
     if(Liczba != "") { 
@@ -16,12 +16,12 @@ string tFL12_345(string Liczba="") {
           Znaki = char(32)+Znaki; 
         } 
       } 
-      //Usuñ 1 pusty znak (tzw. spacje). 
+      //UsuÅ„ 1 pusty znak (tzw. spacje). 
         if(Znaki[0] == char(32)) { return Znaki.substr(1, Znaki.length()); } 
         else { return Znaki; } 
     } else { cout << "?"; } 
 } 
-//Blok g³ówny/startowy. 
+//Blok gÅ‚Ã³wny/startowy. 
 int main() { 
   cout <<"--==  Formatowanie liczby ==--\n"; 
   cout <<"Copyright (c)by Jan T. Biernat\n\n"; 
@@ -31,7 +31,7 @@ int main() {
     cout << "Liczba: "; 
     cin >> Liczba; 
     cout << Liczba << " = " << tFL12_345(Liczba) << "."; 
-  //Naciœnij dowolny klawisz. 
+  //NaciÅ›nij dowolny klawisz. 
     cout << "\n\nNacisnij dowolny klawisz..."; 
     getch(); 
 } 
