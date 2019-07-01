@@ -1,9 +1,11 @@
-﻿#include <iostream> 
+#include <iostream> 
 #include <conio.h> 
+/*--==  Slownie proste ==-- 
+  Copyright (c)by Jan T. Biernat*/ 
 using namespace std; 
 void SlownieProste(string Liczba="") { 
   //SlownieProste - Zamienia podaną liczbę na słowa. 
-  //Na przykład: 12345 = jed*dwa*trz*czt*pie. 
+  //Na przykład: 12345 = jeden*dwa*trzy*cztery*piec. 
     if(Liczba != "") { 
       for(int I=0; I < Liczba.length(); I++) { 
         if(I != 0) { cout << "*"; } 
@@ -29,7 +31,8 @@ int main() {
     string Liczba = ""; 
   //Pobierz dane z klawiatury. 
     cout << "Liczba: "; 
-    cin >> Liczba;  
+    cin >> Liczba; 
+    cout << Liczba << " = "; 
     SlownieProste(Liczba); cout << "."; 
   //Naciśnij dowolny klawisz. 
   cout << "\n\nNacisnij dowolny klawisz..."; 
