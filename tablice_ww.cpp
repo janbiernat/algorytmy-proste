@@ -49,7 +49,7 @@ int main() {
         cout << Tablica[A][B]; 
       } 
     } 
-  //Wyświetl zawartość tablicy za pomocą funkcji "TablicaJW_Pokaz()". 
+  //Wyświetl zawartość tablicy za pomocą funkcji "TablicaWW_Pokaz()". 
     cout << "\n"; TablicaWW_Pokaz(Tablica, IloscElementow); 
   //Naciśnij dowolny klawisz. 
     cout << "\n\nNacisnij dowolny klawisz..."; 
