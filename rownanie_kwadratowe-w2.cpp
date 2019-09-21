@@ -57,6 +57,6 @@ int main() {
                                cout << "\n\nLegenda: P - pierwiastek."; 
                            } 
            } else { cout << "\nBLAD -?Nie dam rady obliczyc X0, X1 i X2!"; } 
-    } while (Delta < 0); 
+    } while(Delta < 0); 
   cout << "\n\n"; 
 } 
